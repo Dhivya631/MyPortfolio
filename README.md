@@ -1,4 +1,4 @@
-# 💼 Portfolio - Dhivya R
+# Portfolio - Dhivya R
 
 Welcome to my personal developer portfolio website built using **HTML**, **Bootstrap CSS**, and **JavaScript**. This site showcases my skills, projects, certifications, education, and professional journey.
 
