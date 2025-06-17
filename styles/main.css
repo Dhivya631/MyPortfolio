@@ -1,0 +1,72 @@
+/* Main Styles */
+:root {
+    --neon-blue: #00BFFF;
+    --neon-purple: #8A2BE2;
+    --neon-pink: #FF1493;
+    --neon-green: #00FF7F;
+    --dark-bg: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
+}
+
+body {
+    background: var(--dark-bg);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
+/* Gradient Text */
+.gradient-text {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+}
+
+/* Glass Effect */
+.glass-effect {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+}
+
+/* Neon Buttons */
+.neon-btn {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    border: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.neon-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 191, 255, 0.3);
+}
+
+/* Progress Bars */
+.progress {
+    height: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple), var(--neon-pink));
+    background-size: 200% 200%;
+    animation: gradient-shift 3s ease infinite;
+    transition: width 2s ease;
+}
+
+/* Particles */
+#particles-js {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}

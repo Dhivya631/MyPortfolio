@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - About</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <style>
+        .gradient-text {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-effect {
+            background: rgba(133, 90, 90, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 12px;
+        }
+        .count-color {
+            color: #00ffff; /* Cyan or choose your preferred highlight color */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-effect">
+        <div class="container">
+            <a class="navbar-brand gradient-text fw-bold" href="index.html">Portfolio</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto me-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="skills.html">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="certifications.html">Certifications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+
+                <!-- Social icons -->
+                <div class="d-flex gap-3">
+                    <a href="https://github.com/Dhivya631" target="_blank" class="text-light fs-5">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhivya287/" target="_blank" class="text-light fs-5">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Particles Background -->
+    <div id="particles-js"></div>
+
+    <!-- About Section -->
+    <section class="py-5 mt-5">
+        <div class="container">
+            <!-- Header -->
+            <div class="text-center mb-5 fade-in-up">
+                <h2 class="display-4 fw-bold gradient-text mb-4">About Me</h2>
+                <p class="lead text-light">Get to know more about my journey, passion, and expertise</p>
+            </div>
+
+            <!-- Main Content -->
+            <!-- About Me Section - Combined Container -->
+            <div class="glass-effect p-4 rounded-3 mb-5 fade-in-up">
+                <h3 class="h2 gradient-text mb-4">My Story</h3>
+                <p class="text-light mb-4">
+                    I’m a dedicated Java Developer with 1.6 years of experience in building scalable applications using 
+                    <strong>Spring Boot</strong> and <strong>Microservices architecture</strong>. I’m skilled in designing RESTful APIs, 
+                    integrating services, and securing applications using <strong>Spring Security</strong>.
+                </p>
+                <p class="text-light mb-4">
+                    I have hands-on experience with containerization using <strong>Docker</strong> and implementing 
+                    <strong>CI/CD workflows</strong> to automate builds and deployments. I'm proficient in writing unit tests with 
+                    <strong>JUnit 5</strong> and tracking test coverage using <strong>JaCoCo</strong>, while maintaining code quality 
+                    with tools like <strong>SonarLint</strong>.
+                </p>
+                <p class="text-light mb-4">
+                    I’m passionate about building clean, efficient, and production-ready applications. I constantly seek opportunities 
+                    to learn and contribute to innovative projects that solve real-world problems.
+                </p>
+                <div class="d-flex gap-3">
+                    <a href="projects.html" class="btn neon-btn">View Projects</a>
+                    <a href="contact.html" class="btn btn-outline-light">Get In Touch</a>
+                </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+                <!-- Projects Completed -->
+                <div class="col-md-3 col-6">
+                    <div class="glass-effect p-3 rounded shadow text-center h-100">
+                        <h2 class="count-color fw-bold">10+</h2>
+                        <p class="text-light">Projects</p>
+                    </div>
+                </div>
+            
+                <!-- LeetCode -->
+                <div class="col-md-3 col-6">
+                    <div class="glass-effect p-3 rounded shadow text-center h-100">
+                        <h2 class="count-color fw-bold">50+</h2>
+                        <p class="text-light">LeetCode</p>
+                    </div>
+                </div>
+            
+                <!-- HackerRank -->
+                <div class="col-md-3 col-6">
+                    <div class="glass-effect p-3 rounded shadow text-center h-100">
+                        <h2 class="count-color fw-bold">100+</h2>
+                        <p class="text-light">HackerRank</p>
+                    </div>
+                </div>
+            
+                <!-- Certifications -->
+                <div class="col-md-3 col-6">
+                    <div class="glass-effect p-3 rounded shadow text-center h-100">
+                        <h2 class="count-color fw-bold">10+</h2>
+                        <p class="text-light">Certifications</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Experience Timeline -->
+            <div class="container my-5">
+                <h3 class="text-center gradient-text mb-5">My Journey</h3>
+            
+                <div class="timeline position-relative">
+                    <!-- Vertical line in the center -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x bg-light" style="width: 4px; height: 100%;"></div>
+            
+                    <div class="row g-0 mb-5 align-items-center position-relative">
+                        <!-- Left: Year -->
+                        <div class="col-md-6 text-end pe-4">
+                            <h5 class="text-light mb-0">2023 - Present</h5>
+                        </div>
+                    
+                        <!-- Right: Role and Description -->
+                        <div class="col-md-6 ps-4">
+                            <div class="glass-effect p-4 rounded">
+                                <h6 class="gradient-text mb-1">Developer</h6>
+                                <p class="text-muted mb-1"><strong style="color:#ff69b4;">HclTech</strong></p>
+                                <p class="text-white mb-0">Started my journey in backend development by working with Java frameworks. Developed backend applications using <strong>Spring Boot</strong> and <strong>Microservices</strong>.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/animations.js"></script>
+</body>
+</html>

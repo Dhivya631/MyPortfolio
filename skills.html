@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Skills</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/animations.css" />
+
+  <style>
+    .skill-box {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+      text-align: center;
+    }
+
+    .skill-box:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0, 255, 255, 0.1);
+    }
+
+    .glass-effect {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    body {
+      background-color: #0d1117;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top glass-effect">
+      <div class="container">
+          <a class="navbar-brand gradient-text fw-bold" href="index.html">Portfolio</a>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+              <ul class="navbar-nav ms-auto me-4">
+                  <li class="nav-item">
+                      <a class="nav-link active" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="skills.html">Skills</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="certifications.html">Certifications</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+
+              <!-- Social icons -->
+              <div class="d-flex gap-3">
+                  <a href="https://github.com/Dhivya631" target="_blank" class="text-light fs-5">
+                      <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/dhivya287/" target="_blank" class="text-light fs-5">
+                      <i class="fab fa-linkedin"></i>
+                  </a>
+              </div>
+          </div>
+      </div>
+  </nav>
+
+  <!-- Particles Background -->
+  <div id="particles-js"></div><br /><br />
+
+  <section class="skills-section py-5">
+    <div class="container">
+      <h2 class="text-center mb-5">⚡ My Skills</h2>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+
+        <!-- Programming Languages -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-code fa-2x text-info mb-2"></i>
+            <h5 class="text-info">Programming Languages</h5>
+            <ul class="list-unstyled mt-3">
+              <li>Java</li>
+              <li>Python</li>
+              <li>C</li>
+              <li style="visibility: hidden;">&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Web Technologies -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-globe fa-2x text-success mb-2"></i>
+            <h5 class="text-info">Web Technologies</h5>
+            <ul class="list-unstyled mt-3">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>JSP</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Backend Frameworks -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-cubes fa-2x text-warning mb-2"></i>
+            <h5 class="text-info">Frameworks</h5>
+            <ul class="list-unstyled mt-3">
+              <li>Spring Boot</li>
+              <li>Microservices</li>
+              <li>JUnit5</li>
+              <li style="visibility: hidden;">&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Databases -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-database fa-2x text-danger mb-2"></i>
+            <h5 class="text-info">Databases</h5>
+            <ul class="list-unstyled mt-3">
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>H2 Database</li>
+              <li style="visibility: hidden;">&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-tools fa-2x text-secondary mb-2"></i>
+            <h5 class="text-info">Tools & Platforms</h5>
+            <ul class="list-unstyled mt-3">
+              <li>Docker</li>
+              <li>Git</li>
+              <li>NetBeans / IntelliJ / VS Code</li>
+              <li>PgAdmin / MySQL WorkBench</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Cloud -->
+        <div class="col">
+          <div class="p-4 glass-effect h-100 fade-in-up skill-box">
+            <i class="fas fa-cloud fa-2x text-light mb-2"></i>
+            <h5 class="text-info">Cloud</h5>
+            <ul class="list-unstyled mt-3">
+              <li>AWS</li>
+              <li>Azure</li>
+              <li style="visibility: hidden;">&nbsp;</li>
+              <li style="visibility: hidden;">&nbsp;</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/skills.js"></script>
+</body>
+</html>
