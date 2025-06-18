@@ -13,24 +13,107 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="styl/esheet" href="styles/animations.css">
     <style>
         .gradient-text {
             background: linear-gradient(45deg, #00c6ff, #0072ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-
-        .glass-effect {
-            background: rgba(133, 90, 90, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(31, 38, 135, 0.2);
-            backdrop-filter: blur(5px);
-            -webkit-backdrop-filter: blur(5px);
-            border-radius: 12px;
-        }
         .count-color {
             color: #00ffff; /* Cyan or choose your preferred highlight color */
+        }
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px 0;
+            }
+
+            .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background-color: #fff;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            }
+
+            .container-timeline {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            }
+
+            .container-timeline.left {
+            left: 0;
+            }
+
+            .container-timeline.right {
+            left: 50%;
+            }
+
+            .container-timeline::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: white;
+            border: 3px solid white;
+            z-index: 1;
+            }
+
+            .container-timeline.left::before {
+            right: -10px;
+            }
+
+            .container-timeline.right::before {
+            left: -10px;
+            }
+
+            .content {
+            padding: 20px;
+            background-color: rgba(0, 255, 255, 0.1);
+            color: white;
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            }
+
+            .content h4 {
+            margin-top: 0;
+            font-weight: bold;
+            }
+
+            .content p,
+            .content span {
+            margin-bottom: 6px;
+            }
+
+            @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 25px;
+            }
+
+            .container-timeline {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .container-timeline.right,
+            .container-timeline.left {
+                left: 0%;
+            }
+
+            .container-timeline.left::before,
+            .container-timeline.right::before {
+                left: 30px;
+            }
         }
     </style>
 </head>
@@ -65,16 +148,6 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-
-                <!-- Social icons -->
-                <div class="d-flex gap-3">
-                    <a href="https://github.com/Dhivya631" target="_blank" class="text-light fs-5">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dhivya287/" target="_blank" class="text-light fs-5">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </nav>
@@ -148,27 +221,60 @@
                         <p class="text-light">Certifications</p>
                     </div>
                 </div>
-            </div>
+            </div><br><br>
             
-            <!-- Experience Timeline -->
-            <div class="container my-5">
-                <h3 class="text-center gradient-text mb-5">My Journey</h3>
+            <section id="experience">
+                <div class="container">
+                  <h2 class="text-center mb-5">
+                    <i class="fas fa-briefcase me-2"></i>Experience
+                  </h2>
             
-                <div class="row g-4">
-                    <!-- Experience -->
-                    <div class="col-md-6 col-lg-12">
-                        <div class="glass-effect p-4 rounded h-100">
-                            <h5 class="fw-bold mb-1" style="color: #ff69b4;">Software Developer</h5>
-                            <p class="text-muted mb-1 fw-semibold">HCLTech</p>
-                            <p class="text-light mb-1"><strong>2023 - Present</strong></p>
-                            <p class="text-light">
-                                Working as a backend developer using <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Microservices</strong>. Experienced with Docker, CI/CD, JUnit 5, and REST APIs.
-                            </p>
-                        </div>
+                  <div class="timeline">
+            
+                    <!-- HCLTech -->
+                    <div class="container-timeline left">
+                      <div class="content">
+                        <h4>HCLTech</h4>
+                        <p><strong>Software Developer</strong></p>
+                        <span>2023 - Present</span>
+                        <p>Backend developer using <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>Microservices</strong>. Hands-on with Docker, CI/CD, JUnit 5, and REST APIs.</p>
+                      </div>
                     </div>
-                </div>
-            </div>
             
+                    <!-- LetsGrowMore -->
+                    <div class="container-timeline right">
+                      <div class="content">
+                        <h4>LetsGrowMore</h4>
+                        <p><strong>Web Development Intern</strong></p>
+                        <span>Sep 2021 - Oct 2021</span>
+                        <p>Built responsive web apps, practiced frontend integration and APIs.</p>
+                      </div>
+                    </div>
+            
+                    <!-- Spark Foundation Web -->
+                    <div class="container-timeline left">
+                      <div class="content">
+                        <h4>The Spark Foundation</h4>
+                        <p><strong>Web Development & Designing Intern</strong></p>
+                        <span>Sep 2021 - Oct 2021</span>
+                        <p>Created responsive pages and collaborated in UI/UX tasks.</p>
+                      </div>
+                    </div>
+            
+                    <!-- Spark Foundation Mobile -->
+                    <div class="container-timeline right">
+                      <div class="content">
+                        <h4>The Spark Foundation</h4>
+                        <p><strong>Mobile Development Intern</strong></p>
+                        <span>Oct 2021 - Nov 2021</span>
+                        <p>Contributed to mobile UI screens, logic, and app deployment.</p>
+                      </div>
+                    </div>
+            
+                  </div>
+                </div>
+              </section>
+
         </div>
     </section>
 

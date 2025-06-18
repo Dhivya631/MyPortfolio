@@ -31,7 +31,6 @@
             border-color: #ff69b4;
             box-shadow: 0 0 0 0.2rem rgba(255, 105, 180, 0.25);
         }
-
     </style>
 </head>
 <body>
@@ -65,16 +64,6 @@
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-
-                <!-- Social icons -->
-                <div class="d-flex gap-3">
-                    <a href="https://github.com/Dhivya631" target="_blank" class="text-light fs-5">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/dhivya287/" target="_blank" class="text-light fs-5">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
             </div>
         </div>
     </nav>
@@ -88,31 +77,31 @@
             <div class="text-center mb-5 fade-in-up">
                 <h3 class="display-4 fw-bold gradient-text mb-4">Get In Touch</h3>
             </div>
-    
-            <div class="row">
-                <!-- Contact Form -->
-                <div class="col-lg-8 mb-5">
+
+            <div class="row justify-content-center">
+                <!-- Contact Form Centered -->
+                <div class="col-lg-8 col-md-10 mx-auto mb-5">
                     <div class="glass-effect p-5 fade-in-left">
-                        <h3 class="gradient-text mb-4">Contact Me</h3>
-    
+                        <h3 class="gradient-text mb-4 text-center">Contact Me</h3>
+
                         <!-- ✅ Actual Form -->
                         <form action="https://formspree.io/f/mjkrokej" method="POST">
                             <div class="row">
                                 <div class="col-md-6 mb-3">
                                     <label for="firstName" class="form-label text-light">First Name</label>
                                     <input type="text" class="form-control bg-transparent text-light border-secondary" 
-                                           id="firstName" name="firstName" required>
+                                        id="firstName" name="firstName" required>
                                 </div>
                                 <div class="col-md-6 mb-3">
                                     <label for="lastName" class="form-label text-light">Last Name</label>
                                     <input type="text" class="form-control bg-transparent text-light border-secondary" 
-                                           id="lastName" name="lastName" required>
+                                        id="lastName" name="lastName" required>
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label text-light">Email Address</label>
                                 <input type="email" class="form-control bg-transparent text-light border-secondary" 
-                                       id="email" name="email" required>
+                                    id="email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="subject" class="form-label text-light">Subject</label>
@@ -128,44 +117,47 @@
                             <div class="mb-4">
                                 <label for="message" class="form-label text-light">Message</label>
                                 <textarea class="form-control bg-transparent text-light border-secondary" 
-                                          id="message" name="message" rows="5" 
-                                          placeholder="Tell me about your project or idea..." required></textarea>
+                                        id="message" name="message" rows="5" required></textarea>
                             </div>
-                            <button type="submit" class="btn neon-btn btn-lg">
-                                <i class="fas fa-paper-plane me-2"></i>Send Message
-                            </button>
+                            <div class="text-center">
+                                <button type="submit" class="btn neon-btn btn-lg">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </div>
                         </form>
-                    </div>
-                </div>
-    
-                <!-- Contact Info -->
-                <div class="col-lg-4">
-                    <div class="glass-effect p-4 mb-4 fade-in-right">
-                        <h4 class="gradient-text mb-4">Contact Information</h4>
-                        <div class="contact-item d-flex align-items-center mb-3">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-envelope fa-lg gradient-text"></i>
-                            </div>
-                            <div>
-                                <div class="text-light fw-semibold">Email</div>
-                                <div class="text-light">dhivya.uma28@gmail.com</div>
-                            </div>
-                        </div>
-                        <div class="contact-item d-flex align-items-center mb-3">
-                            <div class="contact-icon me-3">
-                                <i class="fas fa-map-marker-alt fa-lg gradient-text"></i>
-                            </div>
-                            <div>
-                                <div class="text-light fw-semibold">Location</div>
-                                <div class="text-light">Chennai, India</div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <!-- Connect with Me -->
+                <div class="col-12 text-center">
+                    <h5 class="text-uppercase gradient-text mb-4 fw-bold">Connect with Me</h5>
+                    <div class="d-flex justify-content-center gap-4 fs-5">
+                        <a href="mailto:dhivya.uma28@gmail.com" class="text-light"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/dhivya287/" class="text-light" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Dhivya631" class="text-light" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="my-4 border-light">
+
+            <div class="row">
+                <div class="col text-center">
+                    <p class="mb-0">&copy; 2025 <span class="gradient-text fw-bold">Dhivya R</span>. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
             
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
