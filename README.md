@@ -1,4 +1,4 @@
-# Portfolio - Dhivya R
+# Personal Portfolio - Dhivya R
 
 Welcome to my personal portfolio website built using **HTML**, **Bootstrap CSS**, and **JavaScript**. This site showcases my skills, projects, certifications, education, and professional journey.
 
@@ -38,7 +38,7 @@ Welcome to my personal portfolio website built using **HTML**, **Bootstrap CSS**
 portfolio/
 │
 ├── index.html           # Home Page
-├── about.html           # About Me + Journey
+├── about.html           # About Me + Experience
 ├── projects.html        # Project Details
 ├── skills.html          # Skills Section
 ├── certifications.html  # Certification Section
