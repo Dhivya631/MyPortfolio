@@ -52,5 +52,5 @@ portfolio/
 │   └── animation.js
 │   └── skills.js
 ├── assets/
-│   ├── Dhivya R_Resume.pdf
+│   ├── Dhivya-Resume.pdf
 ├── img/
